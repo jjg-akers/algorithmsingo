@@ -1,5 +1,13 @@
 package recursion
 
+// FibRecursive will calculate the Fibonacci number recursively.
+func FibRecursive(n int) int {
+	if n < 2 {
+		return n
+	}
+	return FibRecursive(n-1) + FibRecursive(n-2)
+}
+
 //Factorial
 //Given n of 1 or more, return the factorial of n, which is n * (n-1) * (n-2) ... 1.
 //ex:
